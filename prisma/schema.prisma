@@ -22,7 +22,6 @@ model Mentor {
   id         String   @id @default(auto()) @map("_id") @db.ObjectId
   email      String
   name       String
-  number     String
   password   String
   role       String
   createdAt  DateTime @default(now())
@@ -32,17 +31,14 @@ model Mentor {
 }
 
 model Employer {
-  id          String   @id @default(auto()) @map("_id") @db.ObjectId
-  email       String
-  Companyname String
-  comapnySize String
-  street      String
-  city        String
-  state       String
-  zip         String
-  country     String
-  password    String
-  role        String
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  companyemail String
+  companyname  String
+  companySize  String
+  city         String
+  country      String
+  password     String
+  role         String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 }

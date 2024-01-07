@@ -28,10 +28,10 @@ const MainHeader = () => {
             <Link href="/newsletter" className={classes.item}>
               Newsletter
             </Link>
-            <Link href="/" className={`${classes.item} ${classes.btn}`}>
+            <Link href="/signin" className={`${classes.item} ${classes.btn}`}>
               Sign In
             </Link>
-            <Link href="/" className={`${classes.item} ${classes.btn}`}>
+            <Link href="/signup" className={`${classes.item} ${classes.btn}`}>
               Sign Up
             </Link>
           </div>
